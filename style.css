@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-fundo: #00030C;
+    --cor-secundaria:#FFFFFF;
+    --cor-terciaria:#167BF7;
+    --cor-quaternaria: #C0C0C0;
+
+    --fonte:"Inter", sans-serif;
+    
+}
+
+body{
+    color: var(--cor-secundaria);
+    background-color: var(--cor-fundo);
+}
+
+
+.principal{
+    background-image: url("./img/Background.png");
+    align-items: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    
+}
+.container__titulo{
+    font-size: 1.75rem;
+    font-family: var(--fonte);
+    font-weight: bold;
+}
+
+
+.container__botao{
+    display: block;
+    
+    background-color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
+    justify-content: center;
+    margin-bottom: 1em;
+    color: var(--cor-secundaria);
+    border-radius: 8px;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.botao_secundario{
+    background-color: transparent;
+}
+.container__texto__descricao{
+    font-size: 0.75rem;
+    font-family: var(--fonte);
+    color: var(--cor-quaternaria);
+}
+.container__imagem{
+    margin: 1em 0 2em 0 ;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-family: var(--fonte);
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    margin: 0 0 8px 0;
+}
+.descricao__texto{
+    font-family: var(--fonte);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-quaternaria)
+    ;
+}
+.container__imagem__secundario{
+    width: 75%;
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos__lista{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 3rem;
+    font-family: var(--fonte);
+    font-weight: bold;
+    
+    color: var(--cor-secundaria);
+}
+.dispositivos__texto{
+    font-size: 2em;
+    font-family: var(--fonte);
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+.rodape{
+    text-align: center;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 3em 10em;
+    font-family: var(--fonte);
+    font-size: 1rem;
+    font-weight: 200;
+    
+}
+.rodape__lista__link{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+.rodape__lista__link:hover{
+    color: var(--cor-terciaria);
+}
+.rodape__descricao{
+    color: var(--cor-quaternaria);
+    font-family: var(--fonte);
+    font-size: 0.875rem;
+    margin: 2em 0;
+
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
